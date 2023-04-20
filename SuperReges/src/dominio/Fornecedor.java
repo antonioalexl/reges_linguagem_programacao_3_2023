@@ -14,6 +14,9 @@ public class Fornecedor {
     public String nomeFantasia;
     public String cnpj;
     public String inscricaoEstadual;
+    public String telefone;
+    public String email;
     public Endereco endereco;
+    
     
 }
