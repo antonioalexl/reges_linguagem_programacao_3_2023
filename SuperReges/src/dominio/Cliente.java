@@ -10,15 +10,13 @@ import java.util.Calendar;
  *
  * @author Alex
  */
-public class Cliente {
+public class Cliente extends Pessoa {
     
-    public String nome;
-    public String cpf;
-    public String telefone;
-    public String email;
-    public Calendar dataNascimento;
-    public String rg;
-    
-    public Endereco endereco;
+    private String cartaoFidelidade;  
+
+    public Cliente(String nomeCompleto, String nomeResumido, Endereco endereco, String telefone, Calendar dataNascFund, String documento, String rgIe, String email, String cartaoFidelidade) {
+        super(nomeCompleto, nomeResumido, endereco, telefone, dataNascFund, documento, rgIe,email);
+        this.cartaoFidelidade = cartaoFidelidade;
+    }
     
 }

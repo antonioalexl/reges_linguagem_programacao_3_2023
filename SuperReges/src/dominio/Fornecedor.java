@@ -4,19 +4,19 @@
  */
 package dominio;
 
+import java.util.Calendar;
+
 /**
  *
  * @author Alex
  */
-public class Fornecedor {
+public class Fornecedor extends Pessoa {
     
-    public String razaoSocial;
-    public String nomeFantasia;
-    public String cnpj;
-    public String inscricaoEstadual;
-    public String telefone;
-    public String email;
-    public Endereco endereco;
+    public Fornecedor(String nomeCompleto, String nomeResumido, Endereco endereco, String telefone, Calendar dataNascFund, String documento, String rgIe, String email) {
+        super(nomeCompleto, nomeResumido, endereco, telefone, dataNascFund, documento, rgIe, email);
+    }
+    
+ 
     
     
 }

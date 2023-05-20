@@ -9,15 +9,26 @@ package dominio;
  * @author Alex
  */
 public class Produto {
+
+    public Produto(String nome, double quantidade, String codigoBarra, double valorCusto, double valorVenda, String marca, String ncm, Fornecedor fornecedor) {
+        this.nome = nome;
+        this.quantidade = quantidade;
+        this.codigoBarra = codigoBarra;
+        this.valorCusto = valorCusto;
+        this.valorVenda = valorVenda;
+        this.marca = marca;
+        this.ncm = ncm;
+        this.fornecedor = fornecedor;
+    }
     
-    public String nome;
-    public double quantidade;
-    public String codigoBarra;
-    public double valorCusto;
-    public double valorVenda;
-    public String marca;
-    public String ncm;
+    private String nome;
+    private double quantidade;
+    private String codigoBarra;
+    private double valorCusto;
+    private double valorVenda;
+    private String marca;
+    private String ncm;
     
-    public Fornecedor fornecedor;
+    private Fornecedor fornecedor;
     
 }
