@@ -11,23 +11,23 @@ import java.util.Calendar;
  *
  * @author Alex
  */
-public class Venda {
+public class Compra {
     
     private Cliente cliente;
     private Funcionario funcionario;
     private int numeroVenda;
     private Calendar dataVenda;
     
-    private ArrayList<Produto> Produtos;
-    private double valorVenda;
+    private ArrayList<ItemCompra> Itens;
+    private double valorTotalVenda;
 
-    public Venda(Cliente cliente, Funcionario funcionario, int numeroVenda, Calendar dataVenda, ArrayList<Produto> Produtos, double valorVenda) {
+    public Compra(Cliente cliente, Funcionario funcionario, int numeroVenda, Calendar dataVenda, ArrayList<ItemCompra> Itens, double valorVenda) {
         this.cliente = cliente;
         this.funcionario = funcionario;
         this.numeroVenda = numeroVenda;
         this.dataVenda = dataVenda;
-        this.Produtos = Produtos;
-        this.valorVenda = valorVenda;
+        this.Itens = Itens;
+        this.valorTotalVenda = valorVenda;
     }
     
 }
